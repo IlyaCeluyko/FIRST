@@ -13,6 +13,20 @@ namespace first
     {
         static void Main(string[] args)
         {
+            string[] arr = new string[] { "qwe", "q", "qw", "assss", "accc", "qas" };
+            var result = arr.Select(s => s[0] == 'a');
+            int countA = 0;
+            foreach (var item in result)
+            {
+                if (item)
+                {
+                    countA++;
+                }
+            }
+
+            Console.WriteLine(countA);
+
+            
         }
     }
 }
